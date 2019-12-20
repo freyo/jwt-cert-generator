@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: chmod +x ./jwt-cert-generator && ./jwt-cert-generator
+      run: chmod +x ./jwt-cert-generator && ./jwt-cert-generator && ls -la . && cat private_pkcs1.pem && cat public_pkcs1.pem && cat private_pkcs8.pem && cat public_pkcs8.pem
